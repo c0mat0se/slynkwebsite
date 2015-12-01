@@ -1,12 +1,10 @@
 var main = function() {
-    
-    
   $('.dropdown-toggle').click(function() {
     $('.dropdown-menu').toggle();
   });
 
   
-  $('.arrow-next').click(function nextSlide() {
+  $('.arrow-next').click(function() {
     var currentSlide = $('.active-slide');
     var nextSlide = currentSlide.next();
 
@@ -23,11 +21,10 @@ var main = function() {
 
     currentDot.removeClass('active-dot');
     nextDot.addClass('active-dot');
-    clearTimeout(timeoutID);
   });
 
 
-  $('.arrow-prev').click(function prevSlide() {
+  $('.arrow-prev').click(function() {
     var currentSlide = $('.active-slide');
     var prevSlide = currentSlide.prev();
 
@@ -44,41 +41,8 @@ var main = function() {
 
     currentDot.removeClass('active-dot');
     prevDot.addClass('active-dot');
-    clearTimeout(timeoutID);
   });
-    
-  var timeoutID;
-
-  function delayTransition(){
-    timeoutID = setTimeout(fadeForward, 8000);
-  }
-
-  var fadeForward = function() {
-    var currentSlide = $('.active-slide');
-    var nextSlide = currentSlide.next();
-
-    var currentDot = $('.active-dot');
-    var nextDot = currentDot.next();
-
-    if(nextSlide.length === 0) {
-      nextSlide = $('.slide').first();
-      nextDot = $('.dot').first();
-    }
-    
-    currentSlide.fadeOut(300).removeClass('active-slide');
-    nextSlide.fadeIn(300).addClass('active-slide');
-
-    currentDot.removeClass('active-dot');
-    nextDot.addClass('active-dot');
-    clearTimeout(timeoutID);
-    main();
-  }
-
-  delayTransition(); 
-    
 
 }
-
-
 
 $(document).ready(main);
