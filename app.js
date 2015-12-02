@@ -13,7 +13,7 @@ var main = function() {
     
   var timeoutID;
   function slideAutoTransit(){
-    timeoutID = setTimeout(nextSlide, 6000);  
+    timeoutID = setTimeout(nextSlide, 8000);  
   }
   
   
