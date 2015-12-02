@@ -6,28 +6,18 @@ var main = function() {
   });
 
   
-  $('.arrow-next').click(function nextSlide() {
-    var currentSlide = $('.active-slide');
-    var nextSlide = currentSlide.next();
+  $('.arrow-next').click(nextSlide);
 
-    var currentDot = $('.active-dot');
-    var nextDot = currentDot.next();
 
-    if(nextSlide.length === 0) {
-      nextSlide = $('.slide').first();
-      nextDot = $('.dot').first();
-    }
+  $('.arrow-prev').click(prevSlide);
     
-    currentSlide.fadeOut(300).removeClass('active-slide');
-    nextSlide.fadeIn(300).addClass('active-slide');
-
-    currentDot.removeClass('active-dot');
-    nextDot.addClass('active-dot');
-    clearTimeout(timeoutID);
-  });
-
-
-  $('.arrow-prev').click(function prevSlide() {
+  var timeoutID;
+  function slideAutoTransit(){
+    timeoutID = setTimeout(nextSlide, 6000);  
+  }
+  
+  
+  function prevSlide() {
     var currentSlide = $('.active-slide');
     var prevSlide = currentSlide.prev();
 
@@ -39,21 +29,16 @@ var main = function() {
       prevDot = $('.dot').last();
     }
     
-    currentSlide.fadeOut(300).removeClass('active-slide');
-    prevSlide.fadeIn(300).addClass('active-slide');
+    currentSlide.fadeOut(750).removeClass('active-slide');
+    prevSlide.fadeIn(1500).addClass('active-slide');
 
     currentDot.removeClass('active-dot');
     prevDot.addClass('active-dot');
     clearTimeout(timeoutID);
-  });
-    
-  var timeoutID;
-
-  function delayTransition(){
-    timeoutID = setTimeout(fadeForward, 8000);
+    slideAutoTransit();
   }
-
-  var fadeForward = function() {
+  
+  function nextSlide() {
     var currentSlide = $('.active-slide');
     var nextSlide = currentSlide.next();
 
@@ -65,17 +50,16 @@ var main = function() {
       nextDot = $('.dot').first();
     }
     
-    currentSlide.fadeOut(300).removeClass('active-slide');
-    nextSlide.fadeIn(300).addClass('active-slide');
+    currentSlide.fadeOut(750).removeClass('active-slide');
+    nextSlide.fadeIn(1500).addClass('active-slide');
 
     currentDot.removeClass('active-dot');
     nextDot.addClass('active-dot');
     clearTimeout(timeoutID);
-    main();
+    slideAutoTransit();
   }
-
-  delayTransition(); 
-    
+  
+  slideAutoTransit()
 
 }
 
