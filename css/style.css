@@ -65,12 +65,12 @@
 .slider {
     position: relative;
     width: 100%;
-    height: 470px;
+    height: 750px;
     border-bottom: 1px solid #ddd;
 }
 
 .slide {
-    background: transparent url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/feature-gradient-transparent.png') center center no-repeat;
+    background: transparent url(../images/windowWidthTest.png) center center no-repeat; /* Slide dimensions @ 750px height are 1600x625. Should probably extend images to 1620x630 to eliminate possible whitespace on borders*/
     background-size: cover;
     display: none;
     position: absolute;
