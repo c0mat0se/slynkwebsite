@@ -1,17 +1,11 @@
-var main = function() {
-     
-  $('.arrow-next').click(nextSlide);
-
-
-  $('.arrow-prev').click(prevSlide);
+var main = function(){
     
-  var timeoutID;
   function slideAutoTransit(){
     timeoutID = setTimeout(nextSlide, 10000);  
   }
   
   
-  function prevSlide() {
+  function prevSlide(){
     var currentSlide = $('.active-slide');
     var prevSlide = currentSlide.prev();
 
@@ -32,7 +26,7 @@ var main = function() {
     slideAutoTransit();
   }
   
-  function nextSlide() {
+  function nextSlide(){
     var currentSlide = $('.active-slide');
     var nextSlide = currentSlide.next();
 
@@ -52,6 +46,10 @@ var main = function() {
     clearTimeout(timeoutID);
     slideAutoTransit();
   }
+  var timeoutID;
+       
+  $('.arrow-next').click(nextSlide);
+  $('.arrow-prev').click(prevSlide);
   
   slideAutoTransit()
 

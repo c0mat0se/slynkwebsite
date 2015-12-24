@@ -121,7 +121,11 @@ body{
 }
 
 .slider-nav {
-    text-align: center;
+    position: absolute;
+    z-index: 2;
+    top: 760px;
+    left: 10px;
+    text-align: left;
     background-color: transparent;
 }
 
@@ -147,12 +151,12 @@ body{
 }
 
 .slider-dots li {
-    color: #bbbcbc;
+    color: #5d5d5d;
     display: inline;
     font-size: 30px;
     margin-right: 5px;
 }
 
 .slider-dots li.active-dot {
-    color: #363636;
+    color: #d2d2d2;
 }
