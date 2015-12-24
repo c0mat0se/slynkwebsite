@@ -1,11 +1,5 @@
 var main = function() {
-    
-    
-  $('.dropdown-toggle').click(function() {
-    $('.dropdown-menu').toggle();
-  });
-
-  
+     
   $('.arrow-next').click(nextSlide);
 
 
@@ -13,7 +7,7 @@ var main = function() {
     
   var timeoutID;
   function slideAutoTransit(){
-    timeoutID = setTimeout(nextSlide, 8000);  
+    timeoutID = setTimeout(nextSlide, 10000);  
   }
   
   
