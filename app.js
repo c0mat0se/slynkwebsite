@@ -1,60 +1,11 @@
-var main = function(){
-    
-  function slideAutoTransit(){
-    timeoutID = setTimeout(nextSlide, 10000);  
-  }
-  
-  
-  function prevSlide(){
-    var currentSlide = $('.active-slide');
-    var prevSlide = currentSlide.prev();
-
-    var currentDot = $('.active-dot');
-    var prevDot = currentDot.prev();
-
-    if(prevSlide.length === 0) {
-      prevSlide = $('.slide').last();
-      prevDot = $('.dot').last();
-    }
-    
-    currentSlide.fadeOut(750).removeClass('active-slide');
-    prevSlide.fadeIn(1500).addClass('active-slide');
-
-    currentDot.removeClass('active-dot');
-    prevDot.addClass('active-dot');
-    clearTimeout(timeoutID);
-    slideAutoTransit();
-  }
-  
-  function nextSlide(){
-    var currentSlide = $('.active-slide');
-    var nextSlide = currentSlide.next();
-
-    var currentDot = $('.active-dot');
-    var nextDot = currentDot.next();
-
-    if(nextSlide.length === 0) {
-      nextSlide = $('.slide').first();
-      nextDot = $('.dot').first();
-    }
-    
-    currentSlide.fadeOut(750).removeClass('active-slide');
-    nextSlide.fadeIn(1500).addClass('active-slide');
-
-    currentDot.removeClass('active-dot');
-    nextDot.addClass('active-dot');
-    clearTimeout(timeoutID);
-    slideAutoTransit();
-  }
-  var timeoutID;
-       
-  $('.arrow-next').click(nextSlide);
-  $('.arrow-prev').click(prevSlide);
-  
-  slideAutoTransit()
-
+function startAnimation() { 
+    var frames = document.getElementById("startLogo").children;
+    var frameCount = frames.length;
+    var i = 0;
+    setInterval(function () { 
+        frames[i % frameCount].style.display = "none";
+        frames[++i % frameCount].style.display = "block";
+    }, 300);
 }
+$(document).ready(startAnimation);
 
-
-
-$(document).ready(main);

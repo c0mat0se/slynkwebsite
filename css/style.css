@@ -1,10 +1,14 @@
 /* General */
 
+
+
 .container {
     width: 960px;
 }
 body{
     background: #252525;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 
@@ -18,6 +22,26 @@ body{
     padding: 15px;
 }
 
+.logo-icon-span{
+    display: inline;
+    position: relative;
+    top: 7px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    
+}
+
+#logo-icon {
+    float: left;
+    position: relative;
+    padding-bottom: 6px;
+    list-style: none;
+    height: 50px;
+    width: auto;
+}
 
 /* Menu */ 
 
@@ -46,116 +70,109 @@ body{
     text-decoration: none;
 }
 
-/* Carousel */
+/* Main Div */
 
-.slider {
+.mainDiv {
+    display: block;
     position: relative;
     width: 100%;
-    height: 750px;
 }
 
-.slide {
-    background-size: cover;
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+#staticPhone {
+    height: 85%;
+    width: auto;
+    position: fixed;
+    right: 50px;
+    z-index: 1;
 }
 
-.active-slide {
-    display: block;
-}
-
-.slide-copy h1 {
-    color: #363636;  
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    font-size: 40px;
-    margin-top: 105px;
-    margin-bottom: 0px;
-}
-
-.slide-copy h2 {
-    color: #b7b7b7;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    font-size: 40px;
-    margin: 5px;
-}
-
-.slide-copy p {
-    color: #959595;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 1.15em;
-    line-height: 1.75em;
-    margin-bottom: 15px;
-    margin-top: 16px;
-}
-
-.slide-img {
-    text-align: right;
-}
-
-/* Slide feature */
-
-.slide-feature {
-    text-align: center;
-    background-image: url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/ac.png');
-    height: 750px;
-}
-
-.slide-feature img {
-    margin-top: 112px;
-    margin-bottom: 28px;
-}
-
-.slide-feature a {
-    display: block;
-    color: #6fc5e0;
-    font-family: "HelveticaNeueMdCn", Helvetica, sans-serif;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-}
-
-.slider-nav {
-    position: absolute;
+#startLogo img {
+    margin: 200px 0 0 1325px;
+    position: fixed;
     z-index: 2;
-    top: 760px;
-    left: 850px;
-    background-color: transparent;
+    display: none;
 }
 
-.arrow-prev {
-    margin-right: 45px;
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 9px;
+#startLogo img:first-child {
+   display: block; 
+}
+/* mainSplash */
+
+#mainSplash {
+    height: 850px;
+    position: relative;
+    background-color: white;
 }
 
-.arrow-next {
-    margin-left: 45px;
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 9px;
+#sMotto {
+    position: relative;
+    left: 400px;
+    top: 160px;
 }
 
-.slider-dots {
-    list-style: none;
-    display: inline-block;
-    padding-left: 0;
-    margin-bottom: 0;
+#lMotto {
+    position: relative;
+    left: 420px;
+    top: 150px;
 }
 
-.slider-dots li {
-    color: #5d5d5d;
-    display: inline;
-    font-size: 30px;
-    margin-right: 5px;
+.myButton {
+	background-color:#FF5A09;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	border:1px solid #FF5A09;
+	display:inline-block;
+	cursor:pointer;
+	color: white;
+	font-size:20px;
+	font-weight:bold;
+	padding:18px 140px;
+    position: relative;
+    top: 230px;
+    left: 395px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background-color:#FF6A09;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
 }
 
-.slider-dots li.active-dot {
-    color: #d2d2d2;
+#spotifyPremium {
+    position: relative;
+    left: 420px;
+    top: 280px;
+}
+
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 40px solid #087B7A;
+	border-right: 40px solid #087B7A;
+	border-top: 40px solid white;
+    position: relative;
+    margin-left: 600px;
+}
+
+#createSplash {
+    height: 900px;
+    position: relative;
+    background-color: #087B7A;
+}
+.vertical-text {
+	transform: rotate(-90deg);
+    position: relative;
+    top: 320px;
+    font-size: 60px;
+    color: #FF7A23;
+    float: left;
+}
+
+#syncSplash {
+    height: 850px;
+    position: relative;
+    background-color: black;
 }
