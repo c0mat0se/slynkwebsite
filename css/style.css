@@ -1,10 +1,8 @@
 /* General */
-
-
-
 .container {
     width: 960px;
 }
+
 body{
     background: #252525;
     font-family: 'Montserrat', sans-serif;
@@ -15,11 +13,19 @@ body{
 /* Header */
 
 .header {
-    background-color: #252525;
+    background-color: black;
+    /*Opacity start*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=40);
+    -moz-opacity: 0.40;
+    -khtml-opacity: 0.4;
+    opacity: 0.4;
+    /*Opacity end*/
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
     font-size: 17px;
     padding: 15px;
+    z-index: 2;
 }
 
 .logo-icon-span{
@@ -49,7 +55,7 @@ body{
     float: right;
     list-style: none;
     margin-top: 5px;
-    background: #252525;
+    z-index: 2;
 }
 
 .menu > li {
@@ -78,14 +84,7 @@ body{
     width: 100%;
 }
 
-#staticPhone {
-    height: 85%;
-    width: auto;
-    position: fixed;
-    right: 50px;
-    z-index: 1;
-}
-
+/*
 #startLogo img {
     margin: 200px 0 0 1325px;
     position: fixed;
@@ -95,25 +94,25 @@ body{
 
 #startLogo img:first-child {
    display: block; 
-}
+}*/
 /* mainSplash */
 
 #mainSplash {
-    height: 850px;
+    height: 1095px;
     position: relative;
-    background-color: white;
+    background-image: url(../images/mainScreenBackground.png);
 }
 
 #sMotto {
     position: relative;
-    left: 400px;
-    top: 160px;
+    left: 1180px;
+    top: 280px;
 }
 
 #lMotto {
     position: relative;
-    left: 420px;
-    top: 150px;
+    left: 1200px;
+    top: 270px;
 }
 
 .myButton {
@@ -129,22 +128,26 @@ body{
 	font-weight:bold;
 	padding:18px 140px;
     position: relative;
-    top: 230px;
-    left: 395px;
+    top: 310px;
+    left: 1175px;
 	text-decoration:none;
+    list-style: none;
 }
 .myButton:hover {
 	background-color:#FF6A09;
+    text-decoration: none;
+    list-style: none;
 }
 .myButton:active {
 	position:relative;
-	top:1px;
+    text-decoration: none;
+    list-style: none;
 }
 
 #spotifyPremium {
     position: relative;
-    left: 420px;
-    top: 280px;
+    left: 1200px;
+    top: 330px;
 }
 
 .arrow-down {
