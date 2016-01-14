@@ -84,9 +84,11 @@ body{
     width: 100%;
 }
 
-/*
+
 #startLogo img {
-    margin: 200px 0 0 1325px;
+    height:240px;
+    width:auto;
+    margin: 400px 0 0 480px;
     position: fixed;
     z-index: 2;
     display: none;
@@ -94,7 +96,7 @@ body{
 
 #startLogo img:first-child {
    display: block; 
-}*/
+}
 /* mainSplash */
 
 #mainSplash {

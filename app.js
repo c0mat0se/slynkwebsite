@@ -5,7 +5,7 @@ function startAnimation() {
     setInterval(function () { 
         frames[i % frameCount].style.display = "none";
         frames[++i % frameCount].style.display = "block";
-    }, 300);
+    }, 70);
 }
 $(document).ready(startAnimation);
 
