@@ -7,5 +7,6 @@ function startAnimation() {
         frames[++i % frameCount].style.display = "block";
     }, 70);
 }
-$(document).ready(startAnimation);
+
+$(document).ready(startAnimation());
 
