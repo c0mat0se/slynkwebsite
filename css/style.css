@@ -1,8 +1,4 @@
 /* General */
-.container {
-    width: 960px;
-}
-
 body{
     background: #252525;
     font-family: 'Montserrat', sans-serif;
@@ -88,8 +84,8 @@ body{
 #startLogo img {
     height:240px;
     width:auto;
-    margin: 400px 0 0 480px;
-    position: fixed;
+    margin: 340px 0 0 480px;
+    position: relative;
     z-index: 2;
     display: none;
 }
@@ -101,20 +97,24 @@ body{
 
 #mainSplash {
     height: 1095px;
+    width: auto;
     position: relative;
     background-image: url(../images/mainScreenBackground.png);
+    background-size: cover;
 }
 
 #sMotto {
     position: relative;
-    left: 1180px;
-    top: 280px;
+    text-align: right;
+    left: 380px;
+    bottom: 285px;
 }
 
 #lMotto {
     position: relative;
-    left: 1200px;
-    top: 270px;
+    text-align: right;
+    left: 360px;
+    bottom: 300px;
 }
 
 .myButton {
@@ -130,8 +130,8 @@ body{
 	font-weight:bold;
 	padding:18px 140px;
     position: relative;
-    top: 310px;
-    left: 1175px;
+    bottom: 250px;
+    left: 1160px;
 	text-decoration:none;
     list-style: none;
 }
@@ -148,32 +148,15 @@ body{
 
 #spotifyPremium {
     position: relative;
-    left: 1200px;
-    top: 330px;
-}
-
-.arrow-down {
-	width: 0; 
-	height: 0; 
-	border-left: 40px solid #087B7A;
-	border-right: 40px solid #087B7A;
-	border-top: 40px solid white;
-    position: relative;
-    margin-left: 600px;
+    text-align: right;
+    left: 370px;
+    bottom: 200px;
 }
 
 #createSplash {
     height: 900px;
     position: relative;
     background-color: #087B7A;
-}
-.vertical-text {
-	transform: rotate(-90deg);
-    position: relative;
-    top: 320px;
-    font-size: 60px;
-    color: #FF7A23;
-    float: left;
 }
 
 #syncSplash {
