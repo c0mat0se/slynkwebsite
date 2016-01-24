@@ -162,5 +162,10 @@ body{
 #syncSplash {
     height: 850px;
     position: relative;
-    background-color: black;
+    background-color: #087B7A;
+}
+
+#hostDJ{
+    position: relative;
+    top: 50px;
 }
