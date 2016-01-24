@@ -5,7 +5,6 @@ body{
     font-weight: bold;
 }
 
-
 /* Header */
 
 .header {
@@ -84,7 +83,8 @@ body{
 #startLogo img {
     height:240px;
     width:auto;
-    margin: 340px 0 0 480px;
+    top: 340px;
+    right: 770px;
     position: relative;
     z-index: 2;
     display: none;
@@ -107,14 +107,14 @@ body{
     position: relative;
     text-align: right;
     left: 380px;
-    bottom: 285px;
+    top: 220px;
 }
 
 #lMotto {
     position: relative;
     text-align: right;
     left: 360px;
-    bottom: 300px;
+    top: 205px;
 }
 
 .myButton {
@@ -130,8 +130,8 @@ body{
 	font-weight:bold;
 	padding:18px 140px;
     position: relative;
-    bottom: 250px;
     left: 1160px;
+    top: 240px;
 	text-decoration:none;
     list-style: none;
 }
@@ -150,7 +150,7 @@ body{
     position: relative;
     text-align: right;
     left: 370px;
-    bottom: 200px;
+    top: 260px;
 }
 
 #createSplash {

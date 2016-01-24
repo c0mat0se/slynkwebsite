@@ -4,7 +4,7 @@ function startAnimation() {
     var frames = document.getElementById("startLogo").children;
     var frameCount = frames.length;
     var myTimer= setInterval(function() {
-        if(i==80) {
+        if(i==70) {
             clearInterval(myTimer);
             idleAnimation();
         } else {  
