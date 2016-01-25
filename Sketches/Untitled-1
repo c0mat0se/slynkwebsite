@@ -1,0 +1,69 @@
+animation
+
+== Sync 1 Frame == (1)
+Outter, Middle, Inner (0)
+
+== Frame 2 ==
+Outter: 15 deg (15)
+Middle: -70 deg (-70)
+Inner: 100 deg (100)
+
+== Frame 3 ==
+Outter: 10 deg (25)
+Middle: -60 deg (-130)
+Inner: 90 deg (190)
+
+== Frame 3 ==
+Outter: 5 deg (30)
+Middle: -50 deg (-180)
+Inner: 80 deg (270)
+
+== 52 Frames == (56)
+Outter: .288 (44.976 deg)
+Middle: -.385 (-200.02 deg)
+Inner: .481 (295.012 deg)
+
+== Frame 57 ==
+Outter: -4.976 (40 deg)
+Middle: 50.02 (-150 deg)
+Inner: -80.012 (215 deg)
+
+== Frame 58 ==
+Outter: -10 (30 deg)
+Middle: 60 (-90 deg)
+Inner: -90 (125 deg)
+
+== Frame 59 ==
+Outter: -30 (0 deg)
+Middle: 90 (0 deg)
+Inner: -125 (0 deg)
+
+== acc frame 1 ==
+Outter: 2 (0 deg)
+Middle: -10 (0 deg)
+Inner: 15 (0 deg)
+
+== acc frame 2 ==
+Outter: 3 (0 deg)
+Middle: -20 (0 deg)
+Inner: 30 (0 deg)
+
+== acc frame 3 ==
+Outter: 10 (0 deg)
+Middle: -60 (0 deg)
+Inner: 90 (0 deg)
+
+== acc frame 4 ==
+Outter: 10 (0 deg)
+Middle: -60 (0 deg)
+Inner: 90 (0 deg)
+
+== acc frame 5 ==
+Outter: 3 (0 deg)
+Middle: -20 (0 deg)
+Inner: 30 (0 deg)
+
+== acc frame 6 ==
+Outter: 2 (0 deg)
+Middle: -10 (0 deg)
+Inner: 15 (0 deg)

@@ -4,14 +4,14 @@ function startAnimation() {
     var frames = document.getElementById("startLogo").children;
     var frameCount = frames.length;
     var myTimer= setInterval(function() {
-        if(i==70) {
+        if(i==175) {
             clearInterval(myTimer);
             idleAnimation();
         } else {  
         frames[i % frameCount].style.display = "none";
         frames[++i % frameCount].style.display = "block";
         }
-    }, 70);
+    }, 16);
 }
 
 function idleAnimation() {
